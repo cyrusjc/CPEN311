@@ -1,0 +1,78 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile {E:/Google Drive/4th term/CPEN 311/HW 2/FSM.mpf}
+# Loading project FSM
+vsim work.fsm
+# vsim -gui E:\Google Drive\4th term\CPEN 311\HW 2\FSM.mpf 
+# Start time: 22:30:07 on Feb 07,2019
+# Loading work.fsm
+vsim work.hw2_tb
+# vsim 
+# Start time: 22:30:29 on Feb 07,2019
+# Loading work.hw2_tb
+# Loading work.fsm
+add wave -position end  sim:/hw2_tb/clk
+add wave -position end  sim:/hw2_tb/rst
+add wave -position end  sim:/hw2_tb/pause
+add wave -position end  sim:/hw2_tb/restart
+add wave -position end  sim:/hw2_tb/state
+add wave -position end  sim:/hw2_tb/even
+add wave -position end  sim:/hw2_tb/odd
+add wave -position end  sim:/hw2_tb/terminal
+run
+# END OF SIM FSM OKAY
+run
+quit -sim
+vsim work.hw2_tb
+# vsim 
+# Start time: 22:31:17 on Feb 07,2019
+# Loading work.hw2_tb
+# Loading work.fsm
+add wave -position end  sim:/hw2_tb/clk
+add wave -position end  sim:/hw2_tb/rst
+add wave -position end  sim:/hw2_tb/pause
+add wave -position end  sim:/hw2_tb/restart
+add wave -position end  sim:/hw2_tb/state
+add wave -position end  sim:/hw2_tb/even
+add wave -position end  sim:/hw2_tb/odd
+add wave -position end  sim:/hw2_tb/terminal
+run
+# END OF SIM FSM OKAY
+vsim work.hw2_b_tb
+# vsim 
+# Start time: 22:33:54 on Feb 07,2019
+# Loading work.hw2_b_tb
+# Loading work.fsm_b
+add wave -position end  sim:/hw2_b_tb/clk
+add wave -position end  sim:/hw2_b_tb/rst
+add wave -position end  sim:/hw2_b_tb/pause
+add wave -position end  sim:/hw2_b_tb/restart
+add wave -position end  sim:/hw2_b_tb/goto_third
+add wave -position end  sim:/hw2_b_tb/state
+add wave -position end  sim:/hw2_b_tb/Out1
+add wave -position end  sim:/hw2_b_tb/Out2
+add wave -position end  sim:/hw2_b_tb/even
+add wave -position end  sim:/hw2_b_tb/odd
+add wave -position end  sim:/hw2_b_tb/terminal
+add wave -position end  sim:/hw2_b_tb/FIRST
+add wave -position end  sim:/hw2_b_tb/SECOND
+add wave -position end  sim:/hw2_b_tb/THIRD
+add wave -position end  sim:/hw2_b_tb/FOURTH
+add wave -position end  sim:/hw2_b_tb/FIFTH
+run
+run
+# NO PROBLEMS WITH RESTART OR PAUSE
+# ** Note: $stop    : E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v(52)
+#    Time: 173 ps  Iteration: 0  Instance: /hw2_b_tb
+# Break in Module hw2_b_tb at E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v line 52
+run
+# END OF SIM FSM OKAY
+# ** Note: $stop    : E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v(85)
+#    Time: 211 ps  Iteration: 0  Instance: /hw2_b_tb
+# Break in Module hw2_b_tb at E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v line 85
+restart -f
+run
+run
+# NO PROBLEMS WITH RESTART OR PAUSE
+# ** Note: $stop    : E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v(52)
+#    Time: 173 ps  Iteration: 0  Instance: /hw2_b_tb
+# Break in Module hw2_b_tb at E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v line 52

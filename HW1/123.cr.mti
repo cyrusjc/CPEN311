@@ -1,0 +1,17 @@
+{E:/Google Drive/4th term/CPEN 311/HW1/HW_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/HW1/HW_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module HW_tb
+
+Top level modules:
+	HW_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/HW1/HW.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/HW1/HW.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module Q7_top
+-- Compiling module vDFF
+-- Compiling module HW_tb
+
+Top level modules:
+	HW_tb
+
+} {} {}}

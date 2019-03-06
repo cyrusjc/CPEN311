@@ -1,0 +1,11 @@
+I/O Assignment Analysis Status : Successful - Mon Feb 11 19:39:15 2019
+Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Revision Name : Basic_Organ_Solution
+Top-level Entity Name : Basic_Organ_Solution
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Total pins : 147 / 457 ( 32 % )
+Total virtual pins : 0
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

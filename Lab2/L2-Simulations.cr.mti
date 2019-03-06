@@ -1,0 +1,79 @@
+{E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module L2_Divider_Control_tb
+
+Top level modules:
+	L2_Divider_Control_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2_Keyboard_Interface_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2_Keyboard_Interface_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module L2_KB_I
+
+Top level modules:
+	L2_KB_I
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Keyboard_Interface.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Keyboard_Interface.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module KB_Interface
+
+Top level modules:
+	KB_Interface
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module data_out
+
+Top level modules:
+	data_out
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/HW1 - Synchronizer_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/HW1 - Synchronizer_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module HW_tb
+
+Top level modules:
+	HW_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module fsm_read_only
+
+Top level modules:
+	fsm_read_only
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L1-Clockdivider.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L1-Clockdivider.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module clock_divider
+
+Top level modules:
+	clock_divider
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Synchronizer.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Synchronizer.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module Synchronizer
+-- Compiling module vDFF
+
+Top level modules:
+	Synchronizer
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module L2_data_out_tb
+
+Top level modules:
+	L2_data_out_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module L2_FSM_tb
+
+Top level modules:
+	L2_FSM_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}}

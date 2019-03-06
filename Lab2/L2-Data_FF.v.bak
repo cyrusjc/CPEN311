@@ -1,0 +1,66 @@
+`define MAXADDRESS 			32'h7FFFF
+
+
+//--------------------------------------------------------//
+//--------------------------------------------------------//
+//22KHZ WILL TRIGGER OUTPUT TO AUDIO SAMPLE
+//FIRST IT WILL READ THE LSB 15-0 
+//THEN ON 2nd CLOCK IT WILL INCREMENT ADDRESS AND READ MSB.
+//IF KEYBOARD INTERUPT THEN:
+//b BACKWARDS, DECREMENTS ADDRESS
+//r SETS ADDRESS TO 0
+//d PAUSES, SKIPS THIS WHOLE THING
+//e GOES THROUGH THIS FLIPFLOP	
+//--------------------------------------------------------//
+//--------------------------------------------------------//
+module data_out( clock, back, start, restart,	in, out, address);
+
+	input clock;
+	input [31:0] in;
+	input back, start, restart;
+	
+	output reg [15:0] out;
+	output reg [31:0] address = 0;
+	
+	reg count = 0;
+	//reg count1 = 0;
+	
+	
+	always @(posedge clock or posedge restart)
+
+	begin
+		if(restart)
+		address <= 32'b0;
+//---------------------- STOP -----------------
+		else 
+		if(!start)
+		begin
+			out <= 32'b0;
+			address <= address;
+		end
+		else
+			begin
+		//----------------------- BACKWARD -----------------	
+				if(back)
+				begin
+						count <= !count;
+						out <= count  ? in[15:0] : in[31:16];
+						if (count ==1)
+							if (address < 32'b0 | address >`MAXADDRESS) address <= `MAXADDRESS;
+							else address <= address - 32'h01;
+				end
+		//----------------------- FORWARD -----------------	
+				else
+				begin
+						count <= !count;
+						out <= count ? in[31:16] : in[15:0];
+					if(count==1)
+						if (address >= `MAXADDRESS) address <= 0;
+						else address <= address + 32'h01;
+					
+				end
+			end
+	
+	end	
+
+endmodule

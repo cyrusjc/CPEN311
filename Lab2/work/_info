@@ -1,0 +1,320 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Cyrus/Desktop/Google Drive/4th term/CPEN 311/HW 2
+vclock_divider
+Z0 !s110 1549942888
+!i10b 1
+!s100 T=DWCRG6c=@8FS7SWG^d82
+IzTQCWial7Z4`:aF<4<n4]1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dE:/Google Drive/4th term/CPEN 311/Lab2
+w1549938643
+8E:/Google Drive/4th term/CPEN 311/Lab2/L1-Clockdivider.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L1-Clockdivider.v
+L0 1
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1549942888.400000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L1-Clockdivider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L1-Clockdivider.v|
+!i113 1
+Z4 o-work work
+vclock_divider_tb
+!s110 1549164403
+!i10b 1
+!s100 WfA1enVSA80^8<imDb0zb3
+I:BOh0blzSL3RZRRQf58`:0
+R1
+R2
+w1547496091
+8E:/Google Drive/4th term/CPEN 311/Lab2/clockdivider_tb.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/clockdivider_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549164403.349000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/clockdivider_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/clockdivider_tb.v|
+!i113 1
+R4
+vdata_out
+R0
+!i10b 1
+!s100 24MbWa^aD^ORh79Vh`2j70
+I?nQ;?kn50cD5UOdUIaT383
+R1
+R2
+w1549940149
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF.v
+L0 16
+R3
+r1
+!s85 0
+31
+!s108 1549942888.818000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF.v|
+!i113 1
+R4
+vdivider
+R0
+!i10b 1
+!s100 jf9BPM0684KA@83VLHNL:2
+IRM?:`^S:V]Sal9P:1_lJg3
+R1
+R2
+w1549936942
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1549942888.967000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control.v|
+!i113 1
+R4
+vfsm_read_only
+Z5 !s110 1549942889
+!i10b 1
+!s100 ATR>fQ:lhLA_eAA9NY>^W3
+Im`8abIaS<fnSM]hzWQMJ13
+R1
+R2
+w1549940285
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller.v
+Z6 L0 15
+R3
+r1
+!s85 0
+31
+!s108 1549942889.201000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller.v|
+!i113 1
+R4
+vFSM_tb
+!s110 1549473870
+!i10b 1
+!s100 TTO2mE8D_RMP:VCR<h_E20
+I1`?6mbnmn@`:dzADZVFNP0
+R1
+Z7 dC:/Users/Cyrus/Desktop/Google Drive/4th term/CPEN 311/Lab2
+w1549473860
+8C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller_tb.v
+FC:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1549473870.764000
+!s107 C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller_tb.v|
+!i113 1
+R4
+n@f@s@m_tb
+vHW_tb
+R0
+!i10b 1
+!s100 ]Qk>34aa9>UHHE`8O4[Wl3
+I0IXLIO9cB=TL>^^IT@EVl0
+R1
+R2
+w1549044584
+8E:/Google Drive/4th term/CPEN 311/Lab2/HW1 - Synchronizer_tb.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/HW1 - Synchronizer_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549942888.274000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/HW1 - Synchronizer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/HW1 - Synchronizer_tb.v|
+!i113 1
+R4
+n@h@w_tb
+vKB_Interface
+R5
+!i10b 1
+!s100 M0OAd9G4jXnIB1A:FAHIA3
+IWQ`9DG4Dhza]^3:CzbZn<1
+R1
+R2
+w1549940400
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2-Keyboard_Interface.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2-Keyboard_Interface.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1549942889.455000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-Keyboard_Interface.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-Keyboard_Interface.v|
+!i113 1
+R4
+n@k@b_@interface
+vL2_data_out_tb
+R5
+!i10b 1
+!s100 ndI=4h2>0W8Kc4A]@7A8G0
+IZmJmZCfg>2zmM:=ZR53fS0
+R1
+R2
+w1549942542
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF_tb.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1549942889.701000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-Data_FF_tb.v|
+!i113 1
+R4
+n@l2_data_out_tb
+vL2_Divider_Control_tb
+R5
+!i10b 1
+!s100 O`aLjK9Xd1Z5YBlnhfQJN3
+IbFKVGcd0?`TI>@P]A9NaJ1
+R1
+R2
+w1549941976
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control_tb.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1549942889.091000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-Divider_Control_tb.v|
+!i113 1
+R4
+n@l2_@divider_@control_tb
+vL2_FSM_read_only
+!s110 1549476912
+!i10b 1
+!s100 ]G_9gh;P?D[<LbA_><]QL2
+I[>GZo5gaQ`kH?bBVaZbb[3
+R1
+R7
+w1549474099
+8C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller.v
+FC:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller.v
+R6
+R3
+r1
+!s85 0
+31
+!s108 1549476912.403000
+!s107 C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab2\L2-FSM_Flash_Controller.v|
+!i113 1
+R4
+n@l2_@f@s@m_read_only
+vL2_FSM_tb
+R5
+!i10b 1
+!s100 DRIQU;`BcGRNgXeW>o6X73
+IYnFhncn7UZ^KP9A=X:o9_0
+R1
+R2
+w1549941767
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller_tb.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1549942889.346000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-FSM_Flash_Controller_tb.v|
+!i113 1
+R4
+n@l2_@f@s@m_tb
+vL2_KB_I
+R0
+!i10b 1
+!s100 Vk]mlnA0T6@:b;aHeDL7A1
+I<ccIBLB7N[1G7gO:_mlQ<3
+R1
+R2
+w1549574091
+8E:/Google Drive/4th term/CPEN 311/Lab2/L2_Keyboard_Interface_tb.v
+FE:/Google Drive/4th term/CPEN 311/Lab2/L2_Keyboard_Interface_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1549942888.682000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2_Keyboard_Interface_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2_Keyboard_Interface_tb.v|
+!i113 1
+R4
+n@l2_@k@b_@i
+vSynchronizer
+R5
+!i10b 1
+!s100 bUH=^KzeKG0n[86j0PdlM3
+I`me;2z>docCN]KniG?4cb0
+R1
+R2
+Z8 w1549049455
+Z9 8E:/Google Drive/4th term/CPEN 311/Lab2/L2-Synchronizer.v
+Z10 FE:/Google Drive/4th term/CPEN 311/Lab2/L2-Synchronizer.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z11 !s108 1549942889.592000
+Z12 !s107 E:/Google Drive/4th term/CPEN 311/Lab2/L2-Synchronizer.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab2/L2-Synchronizer.v|
+!i113 1
+R4
+n@synchronizer
+vvDFF
+R5
+!i10b 1
+!s100 j7SQG0o[fQ5Y=?`l8k:zk0
+I52ePWLK;EDf5]<H20OPI32
+R1
+R2
+R8
+R9
+R10
+L0 20
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R4
+nv@d@f@f

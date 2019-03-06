@@ -1,0 +1,29 @@
+Table of addresses and their specified labels.
+
+000  cold_start
+007  main_program
+00E  delay_1us
+00F  wait_1us
+012  delay_40us
+013  wait_40us
+017  delay_1ms
+018  wait_1ms
+01C  delay_20ms
+01D  wait_20ms
+021  delay_1s
+022  wait_1s
+026  ISR
+031  ADD_BYTE_1
+039  ADD_BYTE_2
+041  ADD_BYTE_3
+049  ADD_BYTE_4
+052  H40
+056  H20
+05A  H10
+05E  H08
+062  H04
+066  H02
+06A  H01
+06E  H00
+06F  OUTPUT_LED
+073  return

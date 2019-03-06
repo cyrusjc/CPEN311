@@ -1,0 +1,377 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile {E:/Google Drive/4th term/CPEN 311/HW1/123.mpf}
+# Loading project 123
+# Error opening E:/Desktop/New folder/HW.v
+# Path name 'E:/Desktop/New folder/HW.v' doesn't exist.
+# Compile of HW.v failed with 5 errors.
+# Compile of HW.v failed with 5 errors.
+# Compile of HW.v failed with 5 errors.
+# Compile of HW.v failed with 5 errors.
+# Compile of HW.v failed with 5 errors.
+# Compile of HW.v failed with 5 errors.
+# Compile of HW.v failed with 1 errors.
+# Compile of HW.v failed with 1 errors.
+# Compile of HW.v failed with 1 errors.
+# Compile of HW.v failed with 1 errors.
+# Compile of HW.v failed with 2 errors.
+# Compile of HW.v was successful.
+# Compile of HW.v was successful.
+# Compile of HW_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of HW.v was successful.
+# Compile of HW_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim -gui E:\Google Drive\4th term\CPEN 311\HW1\123.mpf 
+# Start time: 17:21:03 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(12): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(13): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(14): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(15): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# Error loading design
+vsim work.Q7_top
+# vsim 
+# Start time: 17:22:48 on Jan 20,2019
+# Loading work.Q7_top
+# Loading work.vDFF
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(12): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(13): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(14): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(15): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# Error loading design
+vsim work.Q7_top
+# vsim 
+# Start time: 17:22:49 on Jan 20,2019
+# Loading work.Q7_top
+# Loading work.vDFF
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(12): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(13): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(14): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(15): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# Error loading design
+vsim work.vDFF
+# vsim 
+# Start time: 17:22:50 on Jan 20,2019
+# Loading work.vDFF
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of HW.v was successful.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:25:03 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(12): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(13): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(14): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(15): Too many inherited module instance parameters.
+# 
+#         Region: /HW_tb/DUT
+# Error loading design
+vsim work.Q7_top
+# vsim 
+# Start time: 17:25:04 on Jan 20,2019
+# Loading work.Q7_top
+# Loading work.vDFF
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(12): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(13): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(14): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# ** Error: (vsim-3006) E:/Google Drive/4th term/CPEN 311/HW1/HW.v(15): Too many inherited module instance parameters.
+# 
+#         Region: /Q7_top
+# Error loading design
+vsim work.vDFF
+# vsim 
+# Start time: 17:25:05 on Jan 20,2019
+# Loading work.vDFF
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.Q7_top
+# vsim 
+# Start time: 17:25:46 on Jan 20,2019
+# Loading work.Q7_top
+# Loading work.vDFF
+vsim work.HW_tb
+# vsim 
+# Start time: 17:25:51 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+run
+vsim work.Q7_top
+# vsim 
+# Start time: 17:26:36 on Jan 20,2019
+# Loading work.Q7_top
+# Loading work.vDFF
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:26:46 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+run
+run
+quit -sim
+vsim work.Q7_top
+# vsim 
+# Start time: 17:27:00 on Jan 20,2019
+# Loading work.Q7_top
+# Loading work.vDFF
+quit -sim
+vsim work.Q7_top
+# vsim 
+# Start time: 17:29:36 on Jan 20,2019
+# Loading work.Q7_top
+# Loading work.vDFF
+vsim work.HW_tb
+# vsim 
+# Start time: 17:29:44 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/DUT/async_sig
+add wave -position end  sim:/HW_tb/DUT/outclk
+add wave -position end  sim:/HW_tb/DUT/out_sync_sig
+add wave -position end  sim:/HW_tb/DUT/FDC1OUT
+add wave -position end  sim:/HW_tb/DUT/FDC2OUT
+add wave -position end  sim:/HW_tb/DUT/FDC3OUT
+add wave -position end  sim:/HW_tb/DUT/FDC_1OUT
+add wave -position end  sim:/HW_tb/DUT/VCC
+add wave -position end  sim:/HW_tb/DUT/GND
+add wave -position end  sim:/HW_tb/DUT/b1
+run
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:40:36 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/DUT/async_sig
+add wave -position end  sim:/HW_tb/DUT/outclk
+add wave -position end  sim:/HW_tb/DUT/out_sync_sig
+add wave -position end  sim:/HW_tb/DUT/FDC1OUT
+add wave -position end  sim:/HW_tb/DUT/FDC2OUT
+add wave -position end  sim:/HW_tb/DUT/FDC3OUT
+add wave -position end  sim:/HW_tb/DUT/FDC_1OUT
+add wave -position end  sim:/HW_tb/DUT/VCC
+add wave -position end  sim:/HW_tb/DUT/GND
+run
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:44:05 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+run
+run
+run
+# Break key hit
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:45:12 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+run
+quit -sim
+vsim work.HW_tb
+# vsim 
+# Start time: 17:45:26 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+run
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:46:38 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+add wave -position end  sim:/HW_tb/DUT/FDC1OUT
+add wave -position end  sim:/HW_tb/DUT/FDC2OUT
+add wave -position end  sim:/HW_tb/DUT/FDC3OUT
+add wave -position end  sim:/HW_tb/DUT/FDC_1OUT
+run
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (E:/Google Drive/4th term/CPEN 311/HW1/123.mpf).  File can not be renamed.
+# Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (E:/Google Drive/4th term/CPEN 311/HW1/123.mpf).  File can not be renamed.
+# vsim 
+# Start time: 17:48:48 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+run
+run
+# Break key hit
+quit -sim
+vsim work.HW_tb
+# vsim 
+# Start time: 17:50:21 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+add wave -position end  sim:/HW_tb/DUT/FDC1OUT
+add wave -position end  sim:/HW_tb/DUT/FDC2OUT
+add wave -position end  sim:/HW_tb/DUT/FDC3OUT
+add wave -position end  sim:/HW_tb/DUT/FDC_1OUT
+run
+run
+run
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:52:18 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+add wave -position end  sim:/HW_tb/DUT/FDC1OUT
+add wave -position end  sim:/HW_tb/DUT/FDC2OUT
+add wave -position end  sim:/HW_tb/DUT/FDC3OUT
+add wave -position end  sim:/HW_tb/DUT/FDC_1OUT
+run
+run
+run
+quit -sim
+# Compile of HW.v was successful.
+# Compile of HW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.HW_tb
+# vsim 
+# Start time: 17:53:34 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+add wave -position end  sim:/HW_tb/DUT/FDC1OUT
+add wave -position end  sim:/HW_tb/DUT/FDC2OUT
+add wave -position end  sim:/HW_tb/DUT/FDC3OUT
+add wave -position end  sim:/HW_tb/DUT/FDC_1OUT
+run
+run
+run
+run
+quit -sim
+vsim work.HW_tb
+# vsim 
+# Start time: 19:23:05 on Jan 20,2019
+# Loading work.HW_tb
+# Loading work.Q7_top
+# Loading work.vDFF
+add wave -position end  sim:/HW_tb/async_sig
+add wave -position end  sim:/HW_tb/outclk
+add wave -position end  sim:/HW_tb/out_sync_sig
+run
+run
+run
+# Break key hit

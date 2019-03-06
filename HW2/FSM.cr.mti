@@ -1,0 +1,22 @@
+{E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module hw2_b_tb
+
+Top level modules:
+	hw2_b_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/HW 2/HW2.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/HW 2/HW2.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module fsm
+
+Top level modules:
+	fsm
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/HW 2/HW2_b.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module fsm_b
+
+Top level modules:
+	fsm_b
+
+} {} {}}

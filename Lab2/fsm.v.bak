@@ -1,0 +1,77 @@
+									//43210
+`define S_wait 				5'b00000
+`define S_initiate_read 	5'b00010
+`define S_wait_for_slave 	5'b00110
+`define S_strobe_read		5'b01010
+`define S_finished			5'b10000
+
+module fsm_read_only(clock1, clock2, flash_mem_read, flash_mem_address, flash_mem_waitrequest, flash_mem_readdata, flash_mem_readdatavalid, audio_out);
+				
+	input	clock1, clock2, flash_mem_waitrequest, flash_mem_readdatavalid;
+	input [32-1:0] flash_mem_readdata;
+	output flash_mem_read;
+	output reg [32-1:0] flash_mem_address;
+	output reg [16-1:0] audio_out;
+	
+	reg [5-1:0] state;						//DECLARING a 5 BIT STATE DEFINED ABOVE
+	reg [32-1:0] read_reg; 	//REGISTER FOR DATA
+	wire strobe_read_reg; 				//STROBE FOR READ REG
+	
+	//OUTPUT BASED OFF STATE ENCODING THE GLITCH-FREE WAY :D
+	assign flash_mem_read = state[1];
+	assign strobe_read_reg = state[3];
+	
+	always @(posedge clock1)
+	begin
+		casex (state)
+			`S_wait:					begin
+											// WAITS FOR 22KHZ TO TRIGGER THEN SETS IT TO LOW AGAIN
+											state <= `S_initiate_read;
+										end
+										
+			`S_initiate_read: 	begin
+											state <= `S_wait_for_slave;
+										end
+										
+			`S_wait_for_slave:	begin
+											//IF WAIT REQUESST IS HIGH, THEN WE REMAIN AT THIS STATE
+											if(flash_mem_waitrequest ) state <= `S_wait_for_slave;
+											else state <= `S_finished;
+										end
+										
+			`S_strobe_read:		begin	
+											//TRIGGERS FLIP FLOP WITH STROBE READ AS CLK
+											if (flash_mem_readdatavalid) state <= `S_finished;
+											else state <= `S_strobe_read;
+										end
+										
+			`S_finished:			begin
+											state <= `S_wait;
+										end
+		endcase
+	end
+	
+	//S_strobe_read_REG WILL TRIGGER read_reg
+	always @(posedge strobe_read_reg)
+	begin
+	
+		read_reg <= flash_mem_readdata[15:0];
+	end
+	
+	//22KHZ WILL TRIGGER OUTPUT TO AUDIO SAMPLE
+	always@(posedge clock2)
+	begin
+		flash_mem_address = flash_mem_address + 32'h04;
+		audio_out = read_reg;
+		
+	end
+	
+	initial 
+	begin
+		state = `S_wait;
+		start = 0;
+		flash_mem_address = 32'b0;
+	end
+
+
+	endmodule

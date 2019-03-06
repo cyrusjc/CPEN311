@@ -1,0 +1,22 @@
+`define MAXADDRESS 			32'h7FFFF
+
+module data_out(clock,keyboard_interupt,keyboard_data, in, out, address);
+
+	input clock, keyboard_interupt;
+	input [7:0] keyboard_data;
+	input [31:0] in;
+	output [15:0] out;
+	output reg [31:0] address = 0;
+	
+	reg count = 0;
+	
+	always @(posedge clock) begin
+				count <= !count;
+				audio_out <= count ? read_reg[31:16] : read_reg[15:0];
+				if (count == 1)
+					if (address >= `MAXADDRESS) address <= 0;
+					else address <= address + 32'h01;
+		end
+	end	
+
+endmodule

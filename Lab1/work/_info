@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/14.1
+vFSM_logic
+Z0 !s110 1548126768
+!i10b 1
+!s100 39`Eini=If48_IjjjhInX2
+Id[@WVZ1QZoG0FcXU><57X0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dE:/Google Drive/4th term/CPEN 311/Lab1
+w1548126737
+8E:/Google Drive/4th term/CPEN 311/Lab1/FSM.v
+FE:/Google Drive/4th term/CPEN 311/Lab1/FSM.v
+L0 21
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1548126768.870000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab1/FSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab1/FSM.v|
+!i113 1
+Z4 o-work work
+n@f@s@m_logic
+vFSM_logic_tb
+R0
+!i10b 1
+!s100 S]8N>;e]chDEnD0hICP<z1
+IUT;IQ:V86HK`YSX3>WUN]0
+R1
+R2
+w1548116380
+8E:/Google Drive/4th term/CPEN 311/Lab1/FSM_tb.v
+FE:/Google Drive/4th term/CPEN 311/Lab1/FSM_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1548126768.814000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab1/FSM_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab1/FSM_tb.v|
+!i113 1
+R4
+n@f@s@m_logic_tb

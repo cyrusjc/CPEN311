@@ -1,0 +1,29 @@
+{E:/Google Drive/4th term/CPEN 311/Lab2/clockdivider.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/clockdivider.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module clock_divider
+
+Top level modules:
+	clock_divider
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/FSM_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/FSM_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module FSM_tb
+
+Top level modules:
+	FSM_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/clockdivider_tb.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/clockdivider_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module clock_divider_tb
+
+Top level modules:
+	clock_divider_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab2/fsm.v} {1 {vlog -work work -stats=none {E:/Google Drive/4th term/CPEN 311/Lab2/fsm.v}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module fsm_read_only
+
+Top level modules:
+	fsm_read_only
+
+} {} {}}

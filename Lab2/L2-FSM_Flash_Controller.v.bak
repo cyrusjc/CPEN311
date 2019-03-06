@@ -1,0 +1,160 @@
+									//43210
+`define S_wait 				5'b00000
+`define S_initiate_read 	5'b00010
+`define S_wait_for_slave 	5'b00110
+`define S_strobe_read		5'b01010
+`define S_finished			5'b10000
+
+`define S_width				5
+
+// --------------------------------------------------------------------------------------------------------
+//		THIS TAKES IN 2 SEPARATE CLOCKS ONE FOR 22KHZ AUDIO OUTPUT AND 50MHZ FOR STATE MACHINE
+//		TAKES INPUT FROM KEYBOARD, AND FLASH MEM
+//		OUTPUTS TO FLASH MEM AND AUDIO DATA
+//		
+//--------------------------------------------------------------------------------------------------------------------
+module fsm_read_only(	clock, flash_mem_read, 
+								flash_mem_waitrequest, flash_mem_readdata, 
+								flash_mem_readdatavalid, flash_data_out
+							);
+				
+	//---------------------------------------------------------------------------------------
+	// PARAMTERS FOR KEYBOARD
+	//--------------------------------------------------------------------------------------
+	parameter big_b= 8'h42; //BACKWARDS
+	parameter big_d= 8'h44; //PAUSE
+	parameter big_r= 8'h52; //RESTART
+	parameter big_e= 8'h45; //PLAY
+	parameter big_f =8'h46; //FORWARD
+	//---------------------------------------------------------------------------------------
+	// END OF PARAMTERS FOR KEYBOARD
+	//--------------------------------------------------------------------------------------
+	
+	input	clock, flash_mem_waitrequest, flash_mem_readdatavalid;
+	input [32-1:0] flash_mem_readdata;
+
+	reg [`S_width-1:0] state = `S_wait;						//DECLARING a 5 BIT STATE DEFINED ABOVE
+	output reg [32-1:0] flash_data_out = 32'b0; 					//REGISTER FOR DATA
+	output flash_mem_read;
+	
+	
+	wire strobe_read_reg; 								//STROBE FOR READ REG
+																//OUTPUT BASED OFF STATE ENCODING THE GLITCH-FREE WAY :D
+	assign flash_mem_read = state[1];
+	assign strobe_read_reg = state[3];
+	
+	always @(posedge clock)
+	begin
+		casex (state)
+			`S_wait:					begin
+											// WAITS FOR 22KHZ TO TRIGGER THEN SETS IT TO LOW AGAIN
+											state <= `S_initiate_read;
+										end
+										
+			`S_initiate_read: 	begin
+											state <= `S_wait_for_slave;
+										end
+										
+			`S_wait_for_slave:	begin
+											//IF WAIT REQUESST IS HIGH, THEN WE REMAIN AT THIS STATE
+											if(flash_mem_waitrequest ) state <= `S_wait_for_slave;
+											else state <= `S_strobe_read;
+										end
+										
+			`S_strobe_read:		begin	
+											//TRIGGERS FLIP FLOP WITH STROBE READ AS CLK
+											if (flash_mem_readdatavalid) state <= `S_finished;
+											else state <= `S_strobe_read;
+										end
+										
+			`S_finished:			begin
+											state <= `S_wait;
+										end
+		endcase
+	end
+	
+	//S_strobe_read_REG WILL TRIGGER flash_data_out
+	always @(posedge strobe_read_reg)
+	begin
+		flash_data_out <= flash_mem_readdata;
+	end
+	
+	
+	//--------------------------------------------------------//
+	//--------------------------------------------------------//
+	//22KHZ WILL TRIGGER OUTPUT TO AUDIO SAMPLE
+	//FIRST IT WILL READ THE LSB 15-0 
+	//THEN ON 2nd CLOCK IT WILL INCREMENT ADDRESS AND READ MSB.
+	//IF KEYBOARD INTERUPT THEN:
+	//b BACKWARDS, DECREMENTS ADDRESS
+	//r SETS ADDRESS TO 0
+	//d PAUSES, SKIPS THIS WHOLE THING
+	//e GOES THROUGH THIS FLIPFLOP	
+	//--------------------------------------------------------//
+	//--------------------------------------------------------//
+	/*
+	logic count = 0;								//FOR READING MSB/LSB oF ADDRESS
+	logic count1 = 0;								//FOR BACKWARDS MSB/LSB
+	logic forward = 1;							//SET TO 1 ON F AND 0 ON B
+	logic start = 0;								//SET TO 0 ON E AND 1 ON D
+	logic restart = 0;
+	
+	always @(posedge clock1) 
+	begin
+		if(keyboard_data == big_r) begin restart = !restart; end
+		if(keyboard_data == big_b) begin forward <= 0; 			end
+		else if(keyboard_data == big_f) begin forward <= 1;  	end
+		else if(keyboard_data == big_d) begin start <= 0;		end
+		else if(keyboard_data == big_e) begin start <= 1; 		end
+		else begin forward <= forward; start <= start; restart <= restart; end
+	end
+	
+	always @(posedge clock2)
+	begin
+		if(reset_enable)
+			flash_mem_address <= 32'b0;
+		else if (start) 
+		begin
+// -----------------------BACKWARD -----------------
+			if (forward == 0)
+			begin
+				count1 <= !count1;
+				audio_out <= count1 ? read_reg[15:0] : read_reg[31:16];
+				if (count1 == 0) 
+				begin
+						if (flash_mem_address <= 32'b0 | flash_mem_address >= `MAXADDRESS) flash_mem_address <= `MAXADDRESS;
+						else flash_mem_address <= flash_mem_address - 32'h01;
+				end
+			end
+// -----------------------FORWARD -----------------			
+			else
+			begin
+				count <= !count;
+				audio_out <= count ? read_reg[31:16] : read_reg[15:0];
+				if (count == 1) 
+				begin
+					if (flash_mem_address >= `MAXADDRESS) flash_mem_address <= 32'b0;
+					else flash_mem_address <= flash_mem_address + 32'h01;
+				end
+			end
+		end
+// -----------------------STOP -----------------
+		else
+		begin
+			audio_out <= 16'b0;
+			flash_mem_address <= flash_mem_address;
+		end	
+	end
+	
+	
+
+
+wire reset_enable,reset_reset;
+
+//async_trap_and_reset reset_hold(.async_sig(restart), .outclk(clock1), .out_sync_sig(reset_enable), 
+	//	.auto_reset(1'h1), .reset(1'h1));
+
+//async_trap_and_reset not_reset_hold(.async_sig(~restart), .outclk(clock1), .out_sync_sig(reset_reset), 
+//		.auto_reset(1'h1), .reset(1'h1));
+	*/
+endmodule

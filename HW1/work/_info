@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/14.1
+vHW_tb
+Z0 !s110 1548126282
+!i10b 1
+!s100 E8c9>@R_^8G6b^:2U>b0U2
+ISV_ZBG3b0if>[lQR]Y3Za2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dE:/Google Drive/4th term/CPEN 311/HW1
+w1548040866
+8E:/Google Drive/4th term/CPEN 311/HW1/HW_tb.v
+FE:/Google Drive/4th term/CPEN 311/HW1/HW_tb.v
+L0 1
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1548126282.390000
+!s107 E:/Google Drive/4th term/CPEN 311/HW1/HW_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/HW1/HW_tb.v|
+!i113 1
+Z4 o-work work
+n@h@w_tb
+vQ7_top
+R0
+!i10b 1
+!s100 _z>1J<bE4?ioXVnzJIhAe0
+I8G3DKf5HSNgWgGgDWXFLX0
+R1
+R2
+Z5 w1548041860
+Z6 8E:/Google Drive/4th term/CPEN 311/HW1/HW.v
+Z7 FE:/Google Drive/4th term/CPEN 311/HW1/HW.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1548126282.211000
+Z9 !s107 E:/Google Drive/4th term/CPEN 311/HW1/HW.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|E:/Google Drive/4th term/CPEN 311/HW1/HW.v|
+!i113 1
+R4
+n@q7_top
+vvDFF
+R0
+!i10b 1
+!s100 j7SQG0o[fQ5Y=?`l8k:zk0
+IKR9ioLf[ER^9^Qi=Q[<fh1
+R1
+R2
+R5
+R6
+R7
+L0 20
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+nv@d@f@f

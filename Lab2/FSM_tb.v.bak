@@ -1,0 +1,73 @@
+				//43210
+`define S_wait 			5'b0_0000
+`define S_initiate_read 	5'b0_0010
+`define S_wait_for_slave 	5'b0_0110
+`define S_strobe_read		5'b01010
+`define S_finished		5'b1_0000
+
+module FSM_tb();
+	reg CLK_50M, sync_clock_22khz, flash_mem_waitrequest, flash_mem_readdatavalid;
+	reg [15:0] flash_mem_readdata;
+	wire flash_mem_read;
+	wire [31:0] flash_mem_address;
+	wire [15:0] audio_out;
+
+
+fsm_read_only FSM_LOGIC(		.clock1(CLK_50M), 											.clock2(sync_clock_22khz), 			
+								.flash_mem_read(flash_mem_read),				.flash_mem_address(flash_mem_address), 	
+								.flash_mem_waitrequest(flash_mem_waitrequest), 		.flash_mem_readdata(flash_mem_readdata), 
+								.flash_mem_readdatavalid(flash_mem_readdatavalid), .audio_out(audio_out)
+								);
+
+initial forever begin
+	CLK_50M = 0;#2;
+	CLK_50M = 1;#2;
+end
+
+initial forever begin
+	sync_clock_22khz = 0;#100;
+	sync_clock_22khz = 1;#100;
+
+end
+
+initial begin
+	flash_mem_waitrequest = 1;
+	flash_mem_readdatavalid = 0;
+	flash_mem_readdata = 32'b10101010101010;
+	wait(FSM_LOGIC.state == `S_wait_for_slave)
+	#3;
+	@(posedge CLK_50M) #1; if(FSM_LOGIC.state != `S_wait_for_slave) $display("ST8 CHANGE WITHOUT WAIT REQUEST 0");
+	#4;
+	flash_mem_waitrequest = 0;
+	@(posedge CLK_50M) #1; if(FSM_LOGIC.state != `S_strobe_read) $display ("ST8 IS NOT STROBE READ MUST");
+	#5;
+	flash_mem_readdatavalid = 1;
+	@(posedge CLK_50M) #1 if(FSM_LOGIC.state != `S_finished) $display ("ST8 IS NOT FINISHED");
+	@(posedge sync_clock_22khz) #1 if(audio_out != 16'b10101010101010) $display ("DATA OUT NOT CORRECT");
+
+
+	flash_mem_readdatavalid = 1;
+	flash_mem_waitrequest = 0;
+	wait(state == `S_wait)
+
+	flash_mem_waitrequest = 1;
+	flash_mem_readdatavalid = 0;
+	
+	flash_mem_readdata = 32'b111111111111111;
+	wait(FSM_LOGIC.state == `S_wait_for_slave)
+	#3;
+	@(posedge CLK_50M) #1; if(FSM_LOGIC.state != `S_wait_for_slave) $display("#2ST8 CHANGE WITHOUT WAIT REQUEST 0");
+	#4;
+	flash_mem_waitrequest = 0;
+	@(posedge CLK_50M) #1; if(FSM_LOGIC.state != `S_strobe_read) $display ("#2ST8 IS NOT STROBE READ MUST");
+	#5;
+	flash_mem_readdatavalid = 1;
+	@(posedge CLK_50M) #1 if(FSM_LOGIC.state != `S_finished) $display ("#2ST8 IS NOT FINISHED");
+	@(posedge sync_clock_22khz) #1 if(audio_out != 16'b1111_1111_1111_111) $display ("#2DATA OUT NOT CORRECT");
+	
+	$stop;
+	
+
+end
+
+endmodule
