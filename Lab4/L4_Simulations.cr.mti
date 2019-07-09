@@ -1,0 +1,57 @@
+{E:/Google Drive/4th term/CPEN 311/Lab4/L4_swap_memory_fsm.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_memory_fsm.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module swap_fsm
+
+Top level modules:
+	swap_fsm
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab4/L4_MASTER_CONTROL.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module master_fsm
+
+Top level modules:
+	master_fsm
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab4/L4_decode_fsm.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module decode_fsm
+
+Top level modules:
+	decode_fsm
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab4/L4_init_memory_fsm.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module init_fsm
+
+Top level modules:
+	init_fsm
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab4/L4_MASTER_CONTROL_tb.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL_tb.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module TB_master
+
+Top level modules:
+	TB_master
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab4/L4_swap_fsm_tb.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_fsm_tb.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module swap_fsm_tb
+
+Top level modules:
+	swap_fsm_tb
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab4/L4_init_memory_fsm_tb.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm_tb.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module TB_init
+
+Top level modules:
+	TB_init
+
+} {} {}} {E:/Google Drive/4th term/CPEN 311/Lab4/L4_decode_fsm_tb.sv} {1 {vlog -work work -sv -stats=none {E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm_tb.sv}
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module TB_decode
+
+Top level modules:
+	TB_decode
+
+} {} {}}

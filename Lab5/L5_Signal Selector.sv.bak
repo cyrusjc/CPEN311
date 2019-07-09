@@ -1,0 +1,27 @@
+//===============================================
+// ASK - IF EN THEN WAVE IS 1 ESLE 0
+//===============================================
+
+module ASK(
+	input [11:0] wave,
+	input en,
+	output [11:0] ask_wave
+);
+	
+assign ask_wave = en ? wave : 12'b0;
+	
+endmodule
+
+//===============================================
+// BPSK - INVERTS WAVE IF 1 ELSE NORMAL
+//===============================================
+
+module BPSK(
+	input [11:0] wave,
+	input en,
+	output [11:0] bpsk_wave
+);
+
+assign bpsk_wave = en ? wave : {~wave+1};
+
+endmodule

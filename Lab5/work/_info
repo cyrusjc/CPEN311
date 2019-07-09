@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Cyrus/Desktop/Google Drive/4th term/CPEN 311/HW3
+vL5_LFSR_TB
+Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1552685933
+!i10b 1
+!s100 N@25@;eDVU9I`OmZ0_6em3
+IXW4KHWD>V@]_IDOV;7dkc1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 L5_LFSR_TB_sv_unit
+S1
+Z2 dC:/Users/Cyrus/Desktop/Google Drive/4th term/CPEN 311/Lab5
+w1552685913
+8C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_LFSR_TB.sv
+FC:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_LFSR_TB.sv
+L0 1
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1552685933.043000
+!s107 C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_LFSR_TB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_LFSR_TB.sv|
+!i113 1
+Z4 o-work work -sv
+n@l5_@l@f@s@r_@t@b
+vLFSR
+R0
+!s110 1552685932
+!i10b 1
+!s100 hen`6O]6=Yi1TKY8;WmYN3
+IN[cE^3PIYjbIBQJdlg22d3
+R1
+!s105 L5_5_bit_LFSR_sv_unit
+S1
+R2
+w1552685679
+8C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_5_bit_LFSR.sv
+FC:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_5_bit_LFSR.sv
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1552685932.933000
+!s107 C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_5_bit_LFSR.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\Cyrus\Desktop\Google Drive\4th term\CPEN 311\Lab5\L5_5_bit_LFSR.sv|
+!i113 1
+R4
+n@l@f@s@r

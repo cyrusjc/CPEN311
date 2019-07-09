@@ -1,0 +1,221 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Google Drive/4th term/CPEN 311/HW3
+vdecode_fsm
+Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z1 !s110 1552564538
+!i10b 1
+!s100 QEiDK=G:aGUTZ_z4<>;<I0
+I0ODUZICC=ABgG^UkeX3AR0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 L4_decode_fsm_sv_unit
+S1
+Z3 dE:/Google Drive/4th term/CPEN 311/Lab4
+w1552432641
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm.sv
+Z4 L0 13
+Z5 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1552564538.679000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm.sv|
+!i113 1
+Z6 o-work work -sv
+vinit_fsm
+R0
+R1
+!i10b 1
+!s100 Azm0To_ReDKbUJH^Of6Qe1
+IcNkB3^Q2JV?Ya4G7RPheG3
+R2
+!s105 L4_init_memory_fsm_sv_unit
+S1
+R3
+w1552554461
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm.sv
+L0 8
+R5
+r1
+!s85 0
+31
+!s108 1552564538.856000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm.sv|
+!i113 1
+R6
+XL4_decode_fsm_tb_sv_unit
+R0
+!s110 1552553627
+!i10b 1
+!s100 6ES8lDRdiKAJT:Vkz2idL2
+IG:bC219FmO3XleJIG_jJl3
+VG:bC219FmO3XleJIG_jJl3
+!i103 1
+S1
+R3
+w1552553079
+8E:/Google Drive/4th term/CPEN 311/Lab4/L4_decode_fsm_tb.sv
+FE:/Google Drive/4th term/CPEN 311/Lab4/L4_decode_fsm_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1552553627.859000
+!s107 E:/Google Drive/4th term/CPEN 311/Lab4/L4_decode_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/Google Drive/4th term/CPEN 311/Lab4/L4_decode_fsm_tb.sv|
+!i113 1
+R6
+n@l4_decode_fsm_tb_sv_unit
+vmaster_fsm
+R0
+Z7 !s110 1552564539
+!i10b 1
+!s100 2CXA8om5nXYk9V04SV`Ce0
+ITE6jP>6TfOi:RNXCS8?mh1
+R2
+!s105 L4_MASTER_CONTROL_sv_unit
+S1
+R3
+w1552553035
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL.sv
+L0 8
+R5
+r1
+!s85 0
+31
+!s108 1552564539.035000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL.sv|
+!i113 1
+R6
+vswap_fsm
+R0
+R1
+!i10b 1
+!s100 T5_1FMZ8Mj<4N?V?aLO@L3
+IYk:Mn;oZM<`ZVOKa<Z[fa1
+R2
+!s105 L4_swap_memory_fsm_sv_unit
+S1
+R3
+w1552430678
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_memory_fsm.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_memory_fsm.sv
+R4
+R5
+r1
+!s85 0
+31
+!s108 1552564538.589000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_memory_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_memory_fsm.sv|
+!i113 1
+R6
+vswap_fsm_tb
+R0
+R7
+!i10b 1
+!s100 XKV_ZbLBQ?W3?JWDEn:DJ2
+I070jRaF<ainmF;oZ2a_Vi3
+R2
+!s105 L4_swap_fsm_tb_sv_unit
+S1
+R3
+w1552560217
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_fsm_tb.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_fsm_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1552564539.205000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_swap_fsm_tb.sv|
+!i113 1
+R6
+vTB_decode
+R0
+R1
+!i10b 1
+!s100 AUM]]gHCGb`jY<_Hlk;Tf3
+IG;z1Bh2[^9cD`gGn3JKzG1
+R2
+!s105 L4_decode_fsm_tb_sv_unit
+S1
+R3
+w1552564444
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm_tb.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1552564538.778000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_decode_fsm_tb.sv|
+!i113 1
+R6
+n@t@b_decode
+vTB_init
+R0
+R1
+!i10b 1
+!s100 eG]kdbo5I;@BSm[i7HljW0
+Iz2G@SI5`2men`Y36Mb:S43
+R2
+!s105 L4_init_memory_fsm_tb_sv_unit
+S1
+R3
+w1552556007
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm_tb.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1552564538.948000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_init_memory_fsm_tb.sv|
+!i113 1
+R6
+n@t@b_init
+vTB_master
+R0
+R7
+!i10b 1
+!s100 a`UBJ73FhFD7zaUHho_g50
+IDoC;a@7[0<G1<4N0b2cL_0
+R2
+!s105 L4_MASTER_CONTROL_tb_sv_unit
+S1
+R3
+w1552555609
+8E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL_tb.sv
+FE:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1552564539.122000
+!s107 E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\Google Drive\4th term\CPEN 311\Lab4\L4_MASTER_CONTROL_tb.sv|
+!i113 1
+R6
+n@t@b_master

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at L4_swap_memory_fsm.sv(99): always construct contains both blocking and non-blocking assignments

@@ -23,6 +23,7 @@ module SevenSegmentDisplayDecoder(ssOut, nIn);
       4'hD: ssOut_tmp = 7'b1011110;
       4'hE: ssOut_tmp = 7'b1111001;
       4'hF: ssOut_tmp = 7'b1110001;
+		default: ssOut_tmp = 7'b11111111;
     endcase
 	assign ssOut = ~ssOut_tmp;
 endmodule

@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 7",
+		"os_version" : "6.2"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "none",
+		"error_message" : "Failed to load RapidRecompile state from disk",
+		"source_file" : "/quartus/h/qtk_rr_state_sys.h",
+		"line" : "126",
+		"stack_trace" : "\t0x7ffdc5d62b6b: db_qtk + 0x52b6b (?is_encryption_required@QTK_DB_UTIL@@SA_NPEAVHDB_CMP_ACTION_PT_INSTANCE@@@Z + 0x24b)\n\t0x7ffdc5d67827: db_qtk + 0x57827 (?rapid_recompile_database_exists@QTK_DB_UTIL@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@@Z + 0x1a7)\n\t0x7ffdcc0570f8: SYS_QUI + 0x470f8 (?enable_processing_actions@QUI_PROCESSING_MENU@@UEAAX_N00@Z + 0x348)\n\t0x7ffdcc04a82a: SYS_QUI + 0x3a82a (?project_open@QUI_MENU@@QEAAXXZ + 0x7a)\n\t0x7ffdcc03ee52: SYS_QUI + 0x2ee52 (?ntfq_msg_post_notify_project_open@QUI_FRAME_WND@@UEAA_N_K_N@Z + 0x32)\n\t0x7ffdcce06e5a: SYS_QGQ + 0x6e5a (?ntfq_msg_post_notify_project_open@QGQ_MAIN_WINDOW@@UEAA_N_K_N@Z + 0x1a)\n\t0x7ffdcb991f90: ccl_ntfq + 0x1f90 (?dispatch_notify_msg@NTFQ_NOTIFY_TARGET@@IEAA_NPEBVNTFQ_NOTIFY_MAP@@I_K_N@Z + 0x60)\n\t0x7ffdcb99204b: ccl_ntfq + 0x204b (?on_ntfq_notify@NTFQ_NOTIFY_TARGET@@UEAA_NI_K_N@Z + 0x3b)\n\t0x7ffdcb9923e8: ccl_ntfq + 0x23e8 (?on_ntfq_notify@NTFQ_NOTIFY_TARGET@@UEAA_NI_K_N@Z + 0x3d8)\n\t0x7ffdc7dbb4ae: sys_proj + 0xb4ae (?open@PROJ_PROJECT@@SA?AW4PROJ_STATUS@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@0_N@Z + 0x72e)\n\t0x7ffdcc053cef: SYS_QUI + 0x43cef (?open_project@QUI_PRJ_UI_MGR@@UEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$MEM_STL_ALLOCATOR@D@@@std@@0@Z + 0x66f)\n\t0x7ffdcc0223e9: SYS_QUI + 0x123e9 (?process_cmdline_arguments_post_main_wnd_show@QUI_APP@@MEAAXPEAVQUI_CMDLINE@@@Z + 0x329)\n\t0x7ffdcc020b8c: SYS_QUI + 0x10b8c (?init_instance@QUI_APP@@UEAA_NHPEAPEBDPEAVQUI_CMDLINE@@@Z + 0x49c)\n\t0x7ffdcce021c4: SYS_QGQ + 0x21c4 (?init_instance@QGQ_APP@@UEAA_NHPEAPEBDPEAVQUI_CMDLINE@@@Z + 0xe4)\n\t0x7ff760bf1971: quartus + 0x1971\n\t0x7ffdcce3cad8: CCL_MSG + 0xcad8 (?msg_initialize_out_of_memory_handler@@YAXXZ + 0x378)\n\t0x7ffdcce3e20c: CCL_MSG + 0xe20c (?msg_set_stack_size@@YAXH@Z + 0x7c)\n\t0x7ffdccf45aa0: ccl_mem + 0x5aa0 (?mem_gen_get_project_output_directory@@YAPEBDXZ + 0x64)\n\t0x7ffdcce3c721: CCL_MSG + 0xc721 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff760bf2507: quartus + 0x2507\n\t0x7ff760bf1e74: quartus + 0x1e74\n\t0x7ffe046981f3: KERNEL32 + 0x181f3 (BaseThreadInitThunk + 0x13)\n\t0x7ffe0494a250: ntdll + 0x6a250 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "QTK"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "14.1.0",
+		"build" : "186",
+		"edition" : "Web Edition"
+	}
+}

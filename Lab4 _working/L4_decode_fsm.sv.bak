@@ -1,0 +1,149 @@
+
+//===================********TASK 1********======================
+//  THIS MODULE INCREMENTS COUNT AND ASSIGNS COUNT TO ADDRESS AND DATA
+//  AND ENABLES WRITE TO RAM. BASIC GLITCH FREE STATE MACHINE. 
+//  COMPLETES 1 ITERATION IN 3 CYCLES, AND INCREMENTS COUNTER EVERY 3 CYCLES.
+//  IDLES WHEN COUNT IS 255.
+//===========================================================
+
+module swap_fsm(
+input clock,
+input [23:0] s_key,
+input [7:0] data_in,
+output reg [7:0] address,
+output reg [7:0] data_out,
+input start,
+output write_enable,
+output finish
+);
+											//    98_7654_3210
+parameter s_wait 						= 10'b00_0000_0000;
+parameter s_get_si					= 10'b10_0000_0000;
+parameter s_store_si_temp 			= 10'b00_0001_0000;
+parameter s_calculate_j_temp		= 10'b00_0100_0100;
+parameter s_retrieve_j				= 10'b00_0000_0100;
+parameter s_store_j_temp			= 10'b00_0010_0100;
+parameter s_write_i_to_j			= 10'b00_0000_0101;
+parameter s_set_address_i			= 10'b00_0000_1000;
+parameter s_write_j_to_i			= 10'b00_0000_1001;
+parameter increment_i				= 10'b00_0000_0010;
+parameter finish_swap				= 10'b01_1000_0000;
+
+logic increment;
+reg [9:0] state = 0;
+reg [7:0] var_i = 0;
+reg [7:0] var_j = 0;
+reg [1:0] var_k = 0;
+reg [7:0] temp = 0;
+reg [7:0] temp2= 0;
+reg [7:0] s_key_b;
+
+wire addr_sel;
+wire data_out_sel;
+wire temp_strobe;
+wire temp2_strobe;
+wire calc_j_strobe;
+wire strobe_reset;
+wire en_count;
+
+assign write_enable 	= state[0];
+assign en_count 		= state[1]; 
+assign addr_sel 		= state[2];
+assign data_out_sel 	= state[3];
+assign temp_strobe 	= state[4];
+assign temp2_strobe 	= state[5];
+assign calc_j_strobe = state[6];
+assign strobe_reset  = state[7];
+
+assign finish = strobe_reset;
+
+// MUX CONTROLS WHICH DATA_OUT AND ADDRESS IT IS ( EITHER s[i] or s[j])
+assign data_out = data_out_sel ? temp2 : temp;
+assign address = addr_sel ? var_j : var_i;
+
+//==================================================================
+// 						OUR STATE MACHINE
+//==================================================================
+always_ff @(posedge clock) begin
+	case(state)
+		s_wait 	:				if(start) 
+										state <= s_get_si;
+									else 
+										state <= s_wait;
+		
+		s_get_si	:				state <= s_store_si_temp;
+								
+		s_store_si_temp:		state <= s_calculate_j_temp;
+								
+		s_calculate_j_temp:	state <= s_retrieve_j;
+								
+		s_retrieve_j:			state <= s_store_j_temp;
+								
+		s_store_j_temp:		state <= s_write_i_to_j;
+								
+		s_write_i_to_j:   	state <= s_set_address_i;
+								
+		s_set_address_i:  	state <= s_write_j_to_i;
+								
+		s_write_j_to_i	:		state <= increment_i;
+								
+		increment_i:			if (var_i == 255) 
+										state <= finish_swap;
+									else 
+										state <= s_get_si;
+									
+		finish_swap :			state <= s_wait;
+		
+		default	: 				state <= s_wait;
+
+	endcase 
+end
+//==============================================================================
+// THIS CALCULATES j: j = j+s[i]+secret_key[i%256]
+//==============================================================================
+always @(*) begin
+	var_k <= var_i % 2'b11;
+	casex(var_k)
+		2'b00	:	s_key_b <= s_key[23:16];
+		2'b01	:	s_key_b <= s_key[15:8];
+		2'b10	:	s_key_b <= s_key[7:0];
+		default: s_key_b <= 8'bx;
+	endcase
+end
+//==============================================================================
+// STROBING OUR TEMPORARY REGISTERS AT TEMP (STORING s[i] and s[j], j) 
+//=============================================================================
+always @(posedge temp_strobe or posedge strobe_reset) begin
+	if (strobe_reset)
+		temp <= 7'b0;
+	else 
+		temp <= data_in;
+end
+
+always @(posedge temp2_strobe or posedge strobe_reset) begin
+	if (strobe_reset)
+		temp2 <= 7'b0;
+	else 
+		temp2 <= data_in;
+end
+
+always @(posedge calc_j_strobe or posedge strobe_reset) begin
+	if (strobe_reset)
+		var_j <= 7'b0;
+	else 
+		var_j <= temp + s_key_b + var_j;
+end
+
+//==============================================================================
+// COUNTER WITH ENABLE FROM STATE MACHINE
+//==============================================================================
+always_ff @(posedge clock or posedge strobe_reset) begin
+	if (strobe_reset)
+		var_i <= 7'b0;
+	else if(en_count) 
+		var_i <= var_i + 1;
+	else 
+		var_i <= var_i;
+end
+
+endmodule
